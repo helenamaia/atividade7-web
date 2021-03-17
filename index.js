@@ -1,0 +1,1 @@
+//alert('Mensagem do arquivo index.js');
