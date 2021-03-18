@@ -66,3 +66,11 @@ console.log(typeof altura);
 altura = 10;
 console.log(altura);
 console.log(typeof altura);
+
+const valor = prompt('Informe um valor');
+console.log(typeof valor);
+console.log(valor);
+//const novoValor = valor + 5;
+const novoValor = parseInt(valor) + 5;
+
+console.log(novoValor);
