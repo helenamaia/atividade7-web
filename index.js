@@ -72,5 +72,22 @@ console.log(typeof valor);
 console.log(valor);
 //const novoValor = valor + 5;
 const novoValor = parseInt(valor) + 5;
-
 console.log(novoValor);
+
+const nota = 7.5; 
+
+if (nota>=8) {
+    console.log('A');
+} else if(nota>= 6) {
+    console.log('B');
+} else if(nota>= 5){
+    console.log('C');
+}else{
+    console.log('D');
+}
+
+if(nome){
+    console.log('A variavel nome é truthy');
+} else {
+    console.log(' A variavel nome é falsy');
+}
