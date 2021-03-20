@@ -7,7 +7,7 @@ const conta2 = prompt("Informe o valor da segunda conta:");
 const conta3 = prompt("Informe o valor da terceira conta:");
 
 function calcularGorjeta(valor){
-    const gorjeta=0;
+    let gorjeta=0;
     if(valor < 50){
         gorjeta = valor * 0.2;
     }else if(valor>=50 && valor<=200){
@@ -22,21 +22,17 @@ function calcularGorjeta(valor){
     const gorjeta3 = calcularGorjeta(conta3);
 
     const arrayNomes = [nomeRestaurante1, nomeRestaurante2, nomeRestaurante3];
-    const arrayContas = [conta1, conta1, conta3];
+    const arrayContas = [conta1, conta2, conta3];
     const arrayGorjetas = [gorjeta1, gorjeta2, gorjeta3];
 
-    for (let i = 0; i < arrayContas.length; i++) {
-        const element = arrayContas[i];
-        console.log(element);
-        
-    }
+    
 
     function recibo(arrayNomes, arrayContas, arrayGorjetas){
         for (let i = 0; i < arrayContas.length; i++) {
-            const nome = arrayNomes[i];
+            let nome = arrayNomes[i];
             const conta = arrayContas[i];
             const gorjeta = arrayGorjetas[i];
-            const soma = conta + gorjeta;
+            const soma = parseInt(conta) + parseInt(gorjeta);
             console.log(`${nome} - [Valor: R$ ${conta} | Gorjeta: R$ ${gorjeta} | Total: R$ ${soma}]`);
         }
 
